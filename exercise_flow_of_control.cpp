@@ -23,6 +23,7 @@ int main()
         cin >> celcius_fahrenhiet;
         celcius_to_fahrenheit(celcius_fahrenhiet);
     }
+    return 0;
 }
 
 void fahrenheit_to_celcius(float x)
