@@ -22,7 +22,7 @@ int main()
         cout << "Enter temperature in degrees Celcius: ";
         cin >> celcius_fahrenhiet;
         celcius_to_fahrenheit(celcius_fahrenhiet);
-    }
+    } 
     return 0;
 }
 
