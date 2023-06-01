@@ -30,11 +30,11 @@ void fahrenheit_to_celcius(float x)
 {
     
     float converted_fahrenheit = (x - 32) * 5/9;
-    cout << "\nYour temperature in degrees Celcius is: " << fixed << setprecision(3) << converted_fahrenheit;// set decimal numbers to 3
+    cout << "\nYour temperature in degrees Celcius is: " << fixed << setprecision(3) << converted_fahrenheit;// set decimal numbers to 
 }
 
 void celcius_to_fahrenheit(float x)
 {
     float converted_celcius = (x * 9/5) + 32;
-    cout << "\nYour temperature in degrees Celcius is: " << fixed << setprecision(3) << converted_celcius;
+    cout << "\nYour temperature in degrees Fahrenheit is: " << fixed << setprecision(3) << converted_celcius;
 }
