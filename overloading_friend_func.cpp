@@ -8,13 +8,19 @@ class three_d {
             { x= y = z = 0; }
         three_d(int i, int j, int k)
             {x = i; y = j; z = k; }
-        three_d operator +(three_d op2); //op1 is implied
+        friend three_d operator +(three_d op1, three_d op2);
         three_d operator =(three_d op2); //op1 is implied
-        three_d operator ++();
-        three_d operator ++(int);
-
         void show();
 };
+
+//This is now a friend function.
+three_d operator+(three_d op1, three_d op2){
+    three_d temp;
+    temp.x = op1.x + op2.x;
+    temp.y = op1.x + op2.y;
+    temp.z = op1.z + op2.z;
+    return temp;
+}
 //Overload +
 three_d three_d::operator+(three_d op2){
     three_d temp;
